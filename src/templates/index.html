@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask Ajax</title>
+    <script src="static/jquery.min.js">
+    </script>
+    <script src="static/live.js"></script>
+    <!--<script src="static/pagination.js"></script>-->
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <h1 id="mytitle">My Database</h1>
+
+    <div class="container">
+	    <br><br><br><br>
+    <div class = "panel-body">
+        <form role="form" id = "message" class="form-inline">
+
+        <div class="form-group">
+            <label  for="country">Country Name </label>
+		    <input type="text" id="country" class="form-control" placeholder="Country Name" style="width: 100px">
+        </div>
+
+        <div class="form-group">
+            <label for="series"> Series Name</label>
+            <input type="text" id="series" class="form-control" placeholder="Series Name" style="width: 100px">
+        </div>
+
+        <div class="form-group">
+            <label for="2010"> 2010 </label>
+            <input type="number" id="2010" class="form-control" placeholder="2010" style="width: 80px">
+        </div>
+
+        <div class="form-group">
+            <label for="2011"> 2011 </label>
+            <input type="number" id="2011" class="form-control" placeholder="2010" style="width: 80px">
+        </div>
+
+        <div class="form-group">
+            <label for="2012"> 2012 </label>
+            <input type="number" id="2012" class="form-control" placeholder="2010" style="width: 80px">
+        </div>
+
+        <div class="form-group">
+            <label for="2013"> 2013 </label>
+            <input type="number" id="2013" class="form-control" placeholder="2010" style="width: 80px">
+        </div>
+
+        <div class="form-group">
+            <label for="2014"> 2014 </label>
+            <input type="number" id="2014" class="form-control" placeholder="2010" style="width: 80px">
+        </div>
+
+        <button class="btn btn-default" type="submit" id="submit">Add</button>
+
+    </form>
+    </div>
+    </div>
+    <div id="createtable"></div>
+
+    <div id="my_pagination">
+    <button class="btn btn-info"  id="jumpleft">&lt;</button>
+    <button class="btn btn-default"  id="firstBtn">1</button>
+    <button class="btn btn-default"  id="sec" name="mediumBtn">2</button>
+    <button class="btn btn-default"  id="thi" name="mediumBtn">3</button>
+    <button class="btn btn-default"  id="for" name="mediumBtn">4</button>
+    <button class="btn btn-info"  >...</button>
+    <button class="btn btn-default"  id="lastBtn">720</button>
+    <button class="btn btn-info"  id="jumpright">&orarr;</button>
+    </div>
+
+    <br/><br/>
+</body>
+<link rel="stylesheet" href="static/pagination.css">
+
+</html>
